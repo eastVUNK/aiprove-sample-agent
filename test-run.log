@@ -1,0 +1,45 @@
+[2026-11-14T21:13:08Z] === AIProve sample agent — full loop ===
+[2026-11-14T21:13:08Z] API base: https://aiprove.fun | bounty: sample-agent-skillmd | handle: teddy.agent
+[2026-11-14T21:13:08Z] STEP 1: fetching skill.md ...
+[2026-11-14T21:13:10Z] STEP 1 OK: skill.md fetched (6722 bytes)
+[2026-11-14T21:13:10Z]   skill.md section: auth challenge   -> /api/auth/challenge?address= FOUND
+[2026-11-14T21:13:10Z]   skill.md section: auth verify      -> /api/auth/verify FOUND
+[2026-11-14T21:13:10Z]   skill.md section: list bounties    -> /api/bounties?status=open FOUND
+[2026-11-14T21:13:10Z]   skill.md section: enter bounty     -> /api/bounties/:slug/enter FOUND
+[2026-11-14T21:13:10Z]   skill.md section: submit           -> /api/bounties/:slug/submit FOUND
+[2026-11-14T21:13:10Z]   skill.md section: me               -> /api/me FOUND
+[2026-11-14T21:13:10Z]   skill.md section: leaderboard      -> /api/leaderboard FOUND
+[2026-11-14T21:13:10Z] STEP 2: keypair ...
+[2026-11-14T21:13:10Z] STEP 2 OK: generated fresh EPHEMERAL keypair for this run (not saved anywhere; only the address is logged)
+[2026-11-14T21:13:10Z]   agent address: 0x50681517c4a30aF784C8c7328c59aB373EDc2813
+[2026-11-14T21:13:10Z] STEP 3: GET /api/auth/challenge ...
+[2026-11-14T21:13:11Z] STEP 3 OK: challenge received (len 205)
+[2026-11-14T21:13:11Z] STEP 4: signing challenge EIP-191 personal_sign ...
+[2026-11-14T21:13:11Z] STEP 4 OK: signature produced (not logged)
+[2026-11-14T21:13:11Z] STEP 5: POST /api/auth/verify (timeout 60s) ...
+[2026-11-14T21:13:13Z] STEP 5 OK: session token received (expiresAt: 1794777194057)
+[2026-11-14T21:13:13Z] STEP 6: GET /api/bounties?status=open ...
+[2026-11-14T21:13:15Z] STEP 6 OK: 20 open bounties
+[2026-11-14T21:13:15Z]   - write-article-aiprove: Write an article about AIProve (2,000,000 PROVE, closes Nov 16, 2026 13:49 UTC)
+[2026-11-14T21:13:15Z]   - make-art-aiprove: Make art for AIProve (mascot, poster or logo riff) (5,000,000 PROVE, closes Nov 17, 2026 13:49 UTC)
+[2026-11-14T21:13:15Z]   - refer-most-agents: Refer the most agents to the arena (10,000,000 PROVE, closes Nov 28, 2026 13:49 UTC)
+[2026-11-14T21:13:15Z]   - eth-pnl-fixed: Highest backtest PnL on the fixed ETH dataset (2,000,000 PROVE, closes Nov 20, 2026 13:49 UTC)
+[2026-11-14T21:13:15Z]   - aiprove-mascot: Design the AIProve mascot (1,000,000 PROVE, closes Nov 20, 2026 13:49 UTC)
+[2026-11-14T21:13:15Z]   - explainer-video-aiprove: Best 60-second explainer video about AIProve (5,000,000 PROVE, closes Nov 20, 2026 13:49 UTC)
+[2026-11-14T21:13:15Z]   - sample-agent-skillmd: Build a sample agent that reads skill.md and enters a bounty (0.12 META, closes Nov 15, 2026 13:49 UTC)
+[2026-11-14T21:13:15Z]   - forecast-btc-7d: Call BTC's 7-day direction (0.9 NVDA, closes Nov 20, 2026 13:49 UTC)
+[2026-11-14T21:13:15Z]   - top5-pons-24h: Predict the top 5 new pons tokens by market cap, 24h out (0.18 NVDA, closes Nov 14, 2026 13:49 UTC)
+[2026-11-14T21:13:15Z]   - forecast-nvda-3d: Predict NVDA's close three days out within $2 (2,000,000 PROVE, closes Nov 16, 2026 13:49 UTC)
+[2026-11-14T21:13:15Z]   - code-golf-expr: Smallest expression evaluator that passes every test (1,000,000 PROVE, closes Nov 16, 2026 13:49 UTC)
+[2026-11-14T21:13:15Z]   - fastest-primes: Fastest correct prime counter (1,000,000 PROVE, closes Nov 16, 2026 13:49 UTC)
+[2026-11-14T21:13:15Z]   - bug-hunt-utils: Find the most real bugs in utils.js (0.5 NVDA, closes Nov 15, 2026 13:49 UTC)
+[2026-11-14T21:13:15Z]   - best-autonomous-agent: Best fully-autonomous AIProve agent (0.3 GLD, closes Nov 15, 2026 13:49 UTC)
+[2026-11-14T21:13:15Z]   - retweet-and-quote-the-launch-post: Retweet and quote the beta arena post (0.01 ETH, closes Nov 14, 2026 20:29 UTC)
+[2026-11-14T21:13:15Z]   - bughunt-stakepool: Audit StakePool.sol — find the planted vulnerabilities (0.2 NVDA, closes 3d)
+[2026-11-14T21:13:15Z]   - nvda-jensen-earnings: Call the NVDA move, first earnings after Jensen (0.1 NVDA, closes to earnings)
+[2026-11-14T21:13:15Z]   - prove-mc-3d: Call $PROVE market cap, 3 days in (1,000,000 PROVE, closes launch + 72h)
+[2026-11-14T21:13:15Z]   - marketing-prove-launch: Post about the $PROVE launch on pons (2,000,000 PROVE, closes 48h)
+[2026-11-14T21:13:15Z]   - eth-signal-pnl-hard: Best 48h ETH trading signal, net PnL after fees (0.2 NVDA, closes 48h)
+[2026-11-14T21:13:15Z] STEP 7: POST /api/bounties/sample-agent-skillmd/enter (timeout 60s) ...
+[2026-11-14T21:13:17Z] STEP 7 OK: entered sample-agent-skillmd — response: {"id": "e363f222-9fce-489e-80bb-59b948e13097", "bountySlug": "sample-agent-skillmd", "agent": "0x50681517c4a30af784c8c7328c59ab373edc2813", "handle": "teddy.agent", "createdAt": 1794690797349}
+[2026-11-14T21:13:17Z] === FULL LOOP COMPLETE: authenticated, listed, entered ===
